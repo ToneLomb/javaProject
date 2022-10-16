@@ -1,0 +1,40 @@
+.text-field{
+    -fx-border: none;
+    -fx-background-color:#f5f2e7;
+    -fx-text-decoration:underline;
+}
+
+#submit{
+    -fx-background-color:#5abb7f;
+    -fx-background-radius:20 20 20 20;
+}
+
+#submit1{
+    -fx-background-color:#f5f2e7;
+    -fx-background-radius:20 20 20 20;
+}
+
+#homepage{
+    -fx-background-color:#B7DB38;
+    -fx-background-radius:30 30 0 30;
+}
+
+#players{
+    -fx-background-color:#B7DB38;
+    -fx-background-radius:30 30 0 30;
+}
+
+#plann{
+    -fx-background-color:#B7DB38;
+    -fx-background-radius:30 30 0 30;
+}
+
+#button{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:30 30 30 30;
+}
+
+#submit2{
+    -fx-background-color:#f5f2e7;
+    -fx-background-radius:20 20 20 20;
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="902.0" style="-fx-background-color: #f5f2e7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-42.0" prefHeight="607.0" prefWidth="126.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-42.0">
+         <children>
+            <Button fx:id="btnHome" mnemonicParsing="false" onAction="#goToHome" prefHeight="52.0" prefWidth="130.0" stylesheets="@css/home.css" text="Home">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ressources/images/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnPlayers" mnemonicParsing="false" onAction="#goToPlayers" prefHeight="52.0" prefWidth="130.0" stylesheets="@css/home.css" text="Players">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ressources/images/users.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnMatches" mnemonicParsing="false" onAction="#goToMatches" prefHeight="52.0" prefWidth="130.0" stylesheets="@css/home.css" text="Matches" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ressources/images/games.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane prefHeight="128.0" prefWidth="126.0">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="49.0" layoutX="39.0" layoutY="55.0" onMousePressed="#onDisconnect" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@ressources/images/tennisball.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Pane fx:id="homePane" layoutX="118.0" layoutY="32.0" prefHeight="575.0" prefWidth="786.0" stylesheets="@css/home.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="32.0">
+         <children>
+            <Label fx:id="text1" layoutX="68.0" layoutY="117.0" prefHeight="81.0" prefWidth="262.0" stylesheets="@css/home.css" text="Welcome to our tennis club. No skill levels is required, any players can join the club" textAlignment="JUSTIFY" textFill="#38935b" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="430.0" layoutY="281.0" prefHeight="97.0" prefWidth="231.0" stylesheets="@css/home.css" text="You can register as a player, view upcoming and previous matches between players. " textAlignment="JUSTIFY" textFill="#38935b" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label layoutX="68.0" layoutY="374.0" onMousePressed="#onDisconnect" prefHeight="175.0" prefWidth="263.0" stylesheets="@css/home.css" text="About us : This is a brand new app for the club, feel free to contact us at tennisclub@gmail.com for any suggestions or requets !" textAlignment="JUSTIFY" textFill="#38935b" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <ImageView fitHeight="154.0" fitWidth="246.0" layoutX="430.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ressources/images/players.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="147.0" fitWidth="263.0" layoutX="68.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ressources/images/court.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="154.0" fitWidth="231.0" layoutX="430.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ressources/images/tim.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="band" layoutY="-6.0" prefHeight="128.0" prefWidth="902.0" stylesheets="@css/home.css">
+         <children>
+            <Label layoutX="361.0" layoutY="33.0" text="UCI Tennis" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

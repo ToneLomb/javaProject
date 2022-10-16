@@ -1,0 +1,59 @@
+#lnText,#fnText,#nationalityText{
+    -fx-background-color: white;
+    -fx-border: none;
+}
+
+.combo-box{
+    -fx-background-color: white;
+}
+
+.button{
+    -fx-background-color: white;
+    -fx-color: #38935b; 
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+.table-view .column-header{
+    -fx-background-color:#38935b;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header-background{
+    -fx-background-radius: 30 30 30 30;
+}
+
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-row-cell:hover {
+    -fx-text-background-color: #38935b;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.table-row-cell:odd{
+    -fx-background-color:#dcd7c3;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell:even{
+    -fx-background-color: #f5f2e7;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:selected{
+    -fx-text-background-color: #38935b;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}

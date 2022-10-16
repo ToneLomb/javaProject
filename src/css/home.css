@@ -1,0 +1,17 @@
+#band{
+    -fx-background-color: #38935b;
+}
+#homePane{
+    -fx-background-color: #f5f2e7;
+}
+
+#btnHome,#btnPlayers,#btnMatches{
+    -fx-background-color: transparent;
+}
+
+#btnHome:hover,#btnPlayers:hover,#btnMatches:hover{
+    -fx-background-color: #dcd7c3;
+}
+
+    
+
